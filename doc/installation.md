@@ -197,12 +197,10 @@ The dext used by kmonad is maintained as part of
 [Karabiner-Elements](https://github.com/pqrs-org/Karabiner-Elements).
 Therefore, if you use Karabiner-Elements, you may already have the
 dext installed (though maybe a different version number). Run
-`defaults read
-/Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/Info.plist
-CFBundleVersion` to check the version: if `1.15.0` is shown, then the
+`defaults read /Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/Info.plist CFBundleVersion` to check the version: if `1.15.0` is shown, then the
 installed dext is compatibile with kmonad and you can move onto
 [installing kmonad](#installing-kmonad). If another version is listed,
-this may work too (but has not been tested).
+this may work too (but has not been tested. 1.22.0 doesn't work.)
 
 ##### Build and sign the dext yourself
 
