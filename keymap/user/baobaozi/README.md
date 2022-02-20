@@ -16,6 +16,13 @@ No combos as yet: https://github.com/kmonad/kmonad/issues/157
 1. You may need to install ghcup from Haskell (https://www.haskell.org/ghcup/) just so you can install ghc ... an easier way to do this may just be to `brew install python3`
 1. Then, within that kmonad repo, you need to navigate into: `kmonad/c_src/mac/Karabiner-DriverKit-VirtualHIDDevice/dist` and install `Karabiner-DriverKit-VirtualHIDDevice-1.15.0.pkg`
 1. Then activate this thing with `/Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/MacOS/Karabiner-VirtualHIDDevice-Manager activate`
+   - If you get an error that says:
+      ```
+      activation of org.pqrs.Karabiner-DriverKit-VirtualHIDDevice is requested
+      request of org.pqrs.Karabiner-DriverKit-VirtualHIDDevice is canceled because newer version (1.6.0) is already installed
+      request of org.pqrs.Karabiner-DriverKit-VirtualHIDDevice is failed with error: The operation couldn’t be completed. (OSSystemExtensionErrorDomain error 11.)
+      ```
+      That's because you have a newer version of Karabiner (v14+) installed. You have to uninstall it, and instead of `activate` in the command above, use `forceActivate`
 1. Double-check that it's the right version (should be 1.15.0) with `defaults read /Applications/.Karabiner-VirtualHIDDevice-Manager.app/Contents/Info.plist CFBundleVersion`
    And no, version 1.22.0 doesn’t work.
 1. **IF YOU ARE ON AN APPLE M1 CHIP**, you have to `brew install ghc`, and then update the stack.yaml to include two new lines: `system-ghc: true` and `install-ghc: false` (read: https://github.com/kmonad/kmonad/issues/334#issuecomment-899515001)
