@@ -50,7 +50,7 @@
     lzkbl (tap-hold 180 z @kbl)
 
 ;;  Mod-taps
-    mgsft (tap-hold 180 grv lsft)
+    ;; mgsft (tap-hold 180 grv lsft)
     msctl (tap-hold 180 / lctl)
     mmqu (tap-hold 180 ' lmet)
     mmsp (tap-hold 180 spc lmet)
@@ -77,7 +77,7 @@
     ;; @olkbl  1      2      3      4      5      6      7      8      9      0      -      =      bspc
     tab     @lqnav @lwsym f      p      g      XX     j      l      u      y      ;      -      bspc
 ;; ├───────┴┬─ Q ─┴┬─ W ─┴┬─ F ─┴┬─ P ─┴┬─ G ─┴┬─ J ─┴┬─ L ─┴┬─ U ─┴┬─ Y ─┴┬─ ; ─┴┬─────┴┬─────┴┬──────┤
-    @mgsft   a      r      s      t      d      XX     h      n      e      i      o      '      ret
+    grv      a      r      s      t      d      XX     h      n      e      i      o      '      ret
 ;; ├────────┴┬─ A ─┴┬─ R ─┴┬─ S ─┴┬─ T ─┴┬─ D ─┴┬─ H ─┴┬─ N ─┴┬─ E ─┴┬─ I ─┴┬─ O ─┴┬─────┴┬─────┴──────┤
     @olsf     @lzkbl @lxnum c      v      b      XX     k      m      ,      .      @msctl @olsf
 ;; ├─────────┴──┬ Z ┴──┬ X ┴──┬ C ┴──┬ V ┴──┬ B ┴──┬ K ┴──┬ M ┴──┬ , ┴──┬ . ┴──┬ / ┴──┬───┴──┬─────────┤

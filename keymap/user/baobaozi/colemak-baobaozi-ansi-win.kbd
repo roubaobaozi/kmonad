@@ -51,8 +51,8 @@
     lzkbl (tap-hold 180 z @kbl)
 
 ;;  Mod-taps
-    mgsft (tap-hold 180 grv lsft)
-    msctl (tap-hold 180 / lctl)
+    ;; mgsft (tap-hold 180 grv lsft)
+    msmet (tap-hold 180 / lmet)
     mcqu (tap-hold 180 ' lctl) ;; something is wrong with ' too, if you use English International as the Windows base keyboard layout.
     mcsp (tap-hold 180 spc lctl)
     mahy (tap-hold 180 - lalt)
@@ -79,9 +79,9 @@
     ;; @olkbl  1      2      3      4      5      6      7      8      9      0      -      =      bspc
     tab     @lqnav @lwsym f      p      g      XX     j      l      u      y      ;      =      bspc
 ;; ├───────┴┬─ Q ─┴┬─ W ─┴┬─ F ─┴┬─ P ─┴┬─ G ─┴┬─ J ─┴┬─ L ─┴┬─ U ─┴┬─ Y ─┴┬─ ; ─┴┬─────┴┬─────┴┬──────┤
-    @mgsft   a      r      s      t      d      XX     h      n      e      i      o      '      ret
+    grv      a      r      s      t      d      XX     h      n      e      i      o      '      ret
 ;; ├────────┴┬─ A ─┴┬─ R ─┴┬─ S ─┴┬─ T ─┴┬─ D ─┴┬─ H ─┴┬─ N ─┴┬─ E ─┴┬─ I ─┴┬─ O ─┴┬─────┴┬─────┴──────┤
-    @olsf     @lzkbl @lxnum c      v      b      XX     k      m      ,      .      @mssf  @olsf
+    @olsf     @lzkbl @lxnum c      v      b      XX     k      m      ,      .      @msmet @olsf
 ;; ├─────────┴──┬ Z ┴──┬ X ┴──┬ C ┴──┬ V ┴──┬ B ┴──┬ K ┴──┬ M ┴──┬ , ┴──┬ . ┴──┬ / ┴──┬───┴──┬─────────┤
     XX           XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX
 ;; ├──────┬─ Fn ┴┬─────┴┬─────┴┬─────┴──────┴──────┴──────┴─────┬┴─────┬┴─────┬┴─────┬┴─────┬┴─────────┤
