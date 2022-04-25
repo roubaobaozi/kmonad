@@ -69,7 +69,8 @@
 ;;  Macros
     murl (tap-macro h t t p s : / /)
     mjsp (tap-macro $ { } left)
-    murt (tap-macro rght rght rght rght rght rght rght rght)
+    murt (tap-macro rght P10 rght P10 rght P10 rght P10 rght P10 rght P10 rght P10 rght) ;; appending ":delay 10" doesn't work on Windows, typical
+    mloc (tap-macro d o e s n ' t spc w o r k , spc u s e spc k m o n a d ' s spc a l t S-= l)
 )
 
 (deflayer colemak
@@ -98,7 +99,7 @@
 ;; ├────────┴┬─ A ─┴┬─ R ─┴┬─ S ─┴┬─ T ─┴┬─ D ─┴┬─ H ─┴┬─ N ─┴┬─ E ─┴┬─ I ─┴┬─ O ─┴┬─────┴┬─────┴──────┤
     _         _      @mprv  vold   play   @mnxt  bspc   left   up     down   rght   XX     _
 ;; ├─────────┴──┬ Z ┴──┬ X ┴──┬ C ┴──┬ V ┴──┬ B ┴──┬ K ┴──┬ M ┴──┬ , ┴──┬ . ┴──┬ / ┴──┬───┴──┬─────────┤
-    _            @olsf  @mtsh  M-l    s      @mtmu  @mdln  home   C-home C-end  end    _      _
+    _            @olsf  @mtsh  @mloc  s      @mtmu  @mdln  home   C-home C-end  end    _      _
 ;; ├──────┬─ Fn ┴┬─────┴┬─────┴┬─────┴──────┴──────┴──────┴─────┬┴─────┬┴─────┬┴─────┬┴─────┬┴─────────┤
     _      _      _      _                  _                    _      _      _      _      _
 ;; └──────┴──────┴──────┴──────┴────────────────────────────────┴──────┴──────┴──────┴──────┴──────────┘

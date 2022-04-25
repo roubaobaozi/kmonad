@@ -73,7 +73,7 @@
 (defalias
     murl (tap-macro h t t p s : / /)
     mjsp (tap-macro $ { } left)
-    murt (tap-macro rght rght rght rght rght rght rght rght)
+    murt (tap-macro rght rght rght rght rght rght rght rght :delay 10)
 )
 
 (deflayer colemak
